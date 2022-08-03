@@ -9,4 +9,11 @@ const contact = mongoose.model('datauser', {
         required: true
     }
 })
-module.exports = { contact }
+const dataapi = mongoose.model('dataSearch', {
+
+    nama: {
+        type: String
+    }
+})
+
+module.exports = { contact, dataapi }

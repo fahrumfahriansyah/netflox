@@ -1,0 +1,37 @@
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: url('../img/bgc2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat-y;
+}
+
+
+.bgcsearch {
+    opacity: 0.8;
+    width: 50%;
+    margin: 0px auto;
+    cursor: none;
+}
+
+
+.textShdw {
+    text-shadow: 1px 3px 3px rgb(54, 53, 53);
+    padding-bottom: 10;
+
+}
+
+.lineHeigt {
+    line-height: 100px;
+}
+
+.judul {
+    color: black;
+    text-shadow: 0px 3px 2px whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

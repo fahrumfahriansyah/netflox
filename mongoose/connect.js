@@ -6,3 +6,8 @@ mongoose.connect('mongodb://127.0.0.1:27017/mhs', {
     useUnifiedTopology: true,
     useCreateIndex: true
 });
+
+// dataapi = new dataapi({
+//     nama: 'naruto'
+// })
+// dataapi.save().then(success => { console.log(success); })
