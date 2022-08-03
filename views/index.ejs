@@ -75,24 +75,47 @@
                                         <div class="row gx-5 ">
                                             <div class="col-sm-12">
                                                 <div class="p-3 bg-light bgcsearch">
-
-                                                    <% api.forEach(a=> { %>
-                                                        <ul>
-                                                            <li>
-                                                                <h1>
-                                                                    <%= a.Year %>
-                                                                </h1>
-                                                            </li>
-                                                        </ul>
-                                                        <% }) %>
-                                                            <h1 class="textShdw">Search vidio <i
-                                                                    class="bi bi-search"></i></h1>
+                                                    <h1 class="textShdw">Search vidio <i class="bi bi-search"></i></h1>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="row ps-5">
+                                        <div class="col-sm-12 conten">
+                                            <div class=" row text-center mt-5 ">
+                                                <% api.forEach(a=> { %>
+                                                    <div class=" card col-sm-4 mt-5 ms-2 me-2 pt-3 "
+                                                        style="width: 30%;">
+                                                        <% if (a.Poster==='N/A' ) { %>
+                                                            <h2><strong>tidak ada
+                                                                    gambar</strong></h2>
+                                                            <% } else {%>
+                                                                <img src="<%= a.Poster %>" class="card-img-top"
+                                                                    alt="...">
+                                                                <% } %>
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">
+                                                                            <%= a.Title %>
+                                                                        </h5>
 
-                                    <% } %>
+                                                                        <p>Years: <%= a.Year %>
+                                                                        </p>
+                                                                        <p>
+                                                                            type: <%= a.Type %>
+                                                                        </p>
+                                                                    </div>
+                                                    </div>
+                                                    <% }) %>
+                                            </div>
+                                        </div>
+                                    </div>
     </div>
 
-    <%- include('../layouts/footer') %>
+
+
+    </div>
+    </div>
+
+    <% } %>
+
+        <%- include('../layouts/footer') %>
